@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterLight Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-3/4">
+        <!-- Header Section -->
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold text-green-700">WaterLight Dashboard</h1>
+            <button onclick="refreshData()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+                Refresh Data
+            </button>
+        </div>
+
+        <!-- Status Cards Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div class="p-4 bg-blue-100 rounded-lg text-center">
+                <p class="text-gray-600">Battery Status</p>
+                <h2 id="battery-status" class="text-3xl font-bold">85%</h2>
+            </div>
+            <div class="p-4 bg-yellow-100 rounded-lg text-center">
+                <p class="text-gray-600">Water Level</p>
+                <h2 id="water-level" class="text-3xl font-bold">42%</h2>
+            </div>
+            <div class="p-4 bg-green-100 rounded-lg text-center">
+                <p class="text-gray-600">Energy Production</p>
+                <h2 id="energy-production" class="text-3xl font-bold">1.8 kWh</h2>
+            </div>
+            <div class="p-4 bg-red-100 rounded-lg text-center">
+                <p class="text-gray-600">Efficiency</p>
+                <h2 id="efficiency" class="text-3xl font-bold">78%</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
